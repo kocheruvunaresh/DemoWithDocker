@@ -19,6 +19,7 @@ public class ItemService {
 		}
 
 		long id = idSequence.getAndIncrement();
+		System.out.println("Creating item with id: " + id);
 		return new ItemResponse(
 				id,
 				request.getName().trim(),
