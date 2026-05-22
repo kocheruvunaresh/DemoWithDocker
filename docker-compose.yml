@@ -1,0 +1,8 @@
+services:
+  demo-app:
+    build: .
+    image: demo-app:latest
+    container_name: demo-app
+    ports:
+      - "8070:8080"
+    restart: unless-stopped
